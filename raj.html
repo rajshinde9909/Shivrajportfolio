@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivraj Anil Shinde - Portfolio</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin: 5px 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-item {
+            background-color: #e7f3ff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .project, .achievement {
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            section {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shivraj Anil Shinde</h1>
+        <p>Phone: +91 7507219909 | Email: rajshinde9909@gmail.com | Location: Pune, Maharashtra</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/shivraj-shinde" style="color: white;">linkedin.com/in/shivraj-shinde</a> | GitHub: <a href="https://github.com/Rajshinde9909" style="color: white;">github.com/Rajshinde9909</a></p>
+    </header>
+
+    <nav>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+    </nav>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>B.Tech - Artificial Intelligence and Data Science</strong></p>
+        <p>Vishwakarma University, Pune</p>
+        <p>Expected Graduation: 2026</p>
+        <p>CGPA: 7.66</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill-item">Programming Languages: Python, Javascript</div>
+            <div class="skill-item">AI and Machine Learning: Generative AI, NLP, Transformers, Computer Vision (CNN), RAG, Fine-tuning, TensorFlow, Langchain</div>
+            <div class="skill-item">Data Analytics: Pandas, NumPy, Scikit-learn, SQL, Power BI, Tableau, Matplotlib</div>
+            <div class="skill-item">Data Automation: ETL, Data Pipelines, APIs, Microsoft Power Platform, n8n</div>
+            <div class="skill-item">Tools and Databases: GitHub, MySQL, AWS, Pinecone</div>
+            <div class="skill-item">Soft Skills: Problem Solving, Critical Thinking, Communication, Collaboration, Analytical Skills, Cross-functional Team Coordination</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>RAG Based Search Platform with Real Time Indexing</h3>
+            <ul>
+                <li>Built a scalable RAG based search platform using Flask, Elasticsearch, BERT, and Python, leveraging distributed storage for XML, PDF, and PPTX files, reducing retrieval time by 80% for 50+ clients.</li>
+                <li>Implemented real-time indexing with WebSocket updates and multithreading, achieving 95% latency reduction for 10,000+ documents in a cloud-native environment.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>AI Powered Diagnostic Tool for X Ray Image Analysis</h3>
+            <ul>
+                <li>Architected a CNN based system using TensorFlow, OpenCV, and Python, attaining 92% classification accuracy on a 15,000 image chest X-ray dataset, surpassing baseline model accuracy by 7%.</li>
+                <li>Optimized model with custom architectures and parallel processing, reducing computation time by 30% and enhancing precision by 10% across 5 diseases.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>LLM-Powered Agricultural Report Summarizer</h3>
+            <ul>
+                <li>Engineered an NLP-based summarization tool using fine-tuned BART-large, achieving 85% ROUGE-2 score on a 100 report USDA dataset with 95% accuracy in key insight extraction.</li>
+                <li>Integrated multilingual support for 3 languages and PDF export, reducing report analysis time by 60% and processing 500 pages for agrotech stakeholders.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="achievement">
+            <ul>
+                <li>2nd Runner-Up, Generative AI Art Competition, Vishwakarma University, 2024</li>
+                <li>Co-authored paper, "A Robust Deep Learning Approach for Detecting COVID-19 and Pneumonia in Chest X-ray Scans," accepted at the International Conference on Artificial Intelligence and Sustainable Innovation 2025, published by Scopus, CRC Press Taylor & Francis Group.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shivraj Anil Shinde. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for smooth scrolling
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
